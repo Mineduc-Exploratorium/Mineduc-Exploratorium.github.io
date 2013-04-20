@@ -17,8 +17,8 @@ var VistaPrincipal = Backbone.View.extend({
     	this.width = 800 - this.margin.left - this.margin.right,
     	this.height = 500 - this.margin.top - this.margin.bottom;
 
-    	this.imgwidth = 200;
-		this.imgheight = 200;
+    	this.imgwidth = 400;
+		this.imgheight = 300;
 
 		// Vista con tooltip para mostrar ficha de establecimiento
 		this.tooltip = new VistaToolTipEstablecimiento();
