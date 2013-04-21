@@ -3,7 +3,5 @@
 {"titulo":"Payback", "imgurl":"images/visPayback.png" , "url": "http://exploratorium.s3.amazonaws.com/galeria/visEdSup_Payback/index.html"},
 {"titulo":"Carreras", "imgurl":"images/visCarreras.png" , "url": "http://exploratorium.s3.amazonaws.com/galeria/visEdSupCarreras/index.html"},
 {"titulo":"Flujo", "imgurl":"images/visFlujo.png" , "url": "http://exploratorium.s3.amazonaws.com/galeria/visK12Traza/index.html"},
-{"titulo":"Template", "imgurl":"images/visPayback.png" , "url": "http://exploratorium.s3.amazonaws.com/galeria/visPayback/index.html"},
-{"titulo":"Template", "imgurl":"images/visPayback.png" , "url": "http://exploratorium.s3.amazonaws.com/galeria/visPayback/index.html"},
-{"titulo":"Template", "imgurl":"images/visPayback.png" , "url": "http://exploratorium.s3.amazonaws.com/galeria/visPayback/index.html"}
+{"titulo":"IEs", "imgurl":"images/visPayback.png" , "url": "http://exploratorium.s3.amazonaws.com/galeria/visPayback/index.html"},
 ]
