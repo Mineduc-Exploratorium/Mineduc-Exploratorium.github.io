@@ -1,0 +1,3 @@
+[submodule "galeria/visEdSupCarreras"]
+	path = galeria/visEdSupCarreras
+	url = git://github.com/Mineduc-Exploratorium/visEdSupCarreras.git
