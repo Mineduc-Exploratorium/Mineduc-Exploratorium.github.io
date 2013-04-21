@@ -1,5 +1,5 @@
 $().ready(function() {
-	vista = new VistaPrincipal({el:"#mainchart"});
+	vista = new VistaPrincipal({el:"#main-content"});
 });
 
 // VistaPrincipal
@@ -17,8 +17,8 @@ var VistaPrincipal = Backbone.View.extend({
     	this.width = 800 - this.margin.left - this.margin.right,
     	this.height = 500 - this.margin.top - this.margin.bottom;
 
-    	this.imgwidth = 400;
-		this.imgheight = 300;
+    	this.thumbnailWidth = 200;
+		this.thumbnailHeight = 150;
 
 		// Vista con tooltip para mostrar ficha de establecimiento
 		this.tooltip = new VistaToolTipEstablecimiento();
@@ -41,54 +41,55 @@ var VistaPrincipal = Backbone.View.extend({
 	render: function() {
 		self = this; // Para hacer referencia a "this" en callback functions
 
-		
+		var itemsPorFila = 4
+		// Genera un objeto con un grupo de items para cada fila {0:[{}, {}], 1:[...], }
+		this.databyRows = _.groupBy(this.data, function(d,i) {return Math.floor(i/itemsPorFila)});
+		// Convierte en objeto en un areglo de arreglos (con itemsPorFila c/u )
+		this.databyRows = _.toArray(this.databyRows);
 	
-			// Genera elemento SVG contenedor principal de gráficos
-		this.svg = d3.select(this.el).append("svg")
-		    .attr("width", this.width + this.margin.left + this.margin.right)
-		    .attr("height", this.height + this.margin.top + this.margin.bottom)
-		  .append("g")
-		    .attr("transform", "translate(" + this.margin.left + "," + this.margin.top + ")");
+		// Genera contenedor principal de la galería
+		this.galeria = d3.select(this.el)
+			.append("div")
+			.attr("id","galeria")
 
-		this.svg.selectAll("circle")
-			.data(this.data)
+		// Genera las filas (<div class="row">) - Usando Rows de Boostrap
+		this.filas = this.galeria.selectAll(".row")
+			.data(this.databyRows)
 			.enter()
-				.append("image")
-				.attr("x", function(d,i) {return self.calculateImgPosition(i).x})
-				.attr("y", function(d,i) {return self.calculateImgPosition(i).y})
-				.attr("width", self.imgwidth)
-				.attr("height", self.imgheight)
-				.attr("xlink:href",  function(d) {return d.imgurl})
-				.on("click", function(d) {
-					alert(d.url);
-					window.location.href = d.url;
-				});
+				.append("div")
+				.attr("class", "row");
 
+		// Genera celdas en cada fila (<div class="span3">) - Usando span de Bootstrap
+		this.celdas = this.filas.selectAll(".item")
+			.data(function(d) {return d})
+			.enter()
+				.append("div")
+					.attr("class", "span3")
+				.append("a")
+					.attr("href",function(d) {return d.url})				
 
-				/*
-			<image x="20" y="20" width="300" height="80"
-     xlink:href="http://jenkov.com/images/layout/top-bar-logo.png" />
-				.append("circle")
-				.attr("cx", function(d,i) {return 20*i})
-				.attr("cy", function(d,i) {return 20*i})
-				.attr("r", function(d) {return 8})
-				*/
+		// Agrega título a cada celda
+		this.celdas
+				.append("h5")
+					.text(function(d) {return d.titulo})
+
+		// Agrega un div con la imágen
+		this.celdas
+				.append("img")
+					.attr("class", "img-polaroid")
+					.attr("src",  function(d) {return d.imgurl})
+
 
 		$("body").append(this.tooltip.render().$el);
 
 	},
 
-	calculateImgPosition: function(i) {
-		var maxcols = Math.ceil(this.width/this.imgwidth);
-
-		var row = Math.floor(i/maxcols);
-		var col = i-(row*maxcols);
-
-		pos = {x:col*this.imgwidth, y:row*this.imgheight};
-		return pos;
-	}
 
 });
+
+
+
+
 
 // VistaToolTipEstablecimiento
 // ----------------------------
