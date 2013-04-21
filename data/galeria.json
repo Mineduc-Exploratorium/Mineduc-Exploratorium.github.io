@@ -1,8 +1,9 @@
 [
-{"titulo":"Payback", "imgurl":"images/visPayback.png" , "url": "./galeria/visTemplate/index.html"},
-{"titulo":"Payback", "imgurl":"images/visTemplate.png" , "url": "gallery/visPayback/index.html"},
-{"titulo":"Payback", "imgurl":"images/visPayback.png" , "url": "gallery/visPayback/index.html"},
-{"titulo":"Payback", "imgurl":"images/visPayback.png" , "url": "gallery/visPayback/index.html"},
-{"titulo":"Payback", "imgurl":"images/visPayback.png" , "url": "gallery/visPayback/index.html"},
-{"titulo":"Payback", "imgurl":"images/visPayback.png" , "url": "gallery/visPayback/index.html"}
+{"titulo":"Financiamiento", "imgurl":"images/Payback.png" , "url": "./galeria/visK12Financiamiento/index.html"},
+{"titulo":"Payback", "imgurl":"images/visPayback.png" , "url": "./galeria/visEdSupPayback/index.html"},
+{"titulo":"Template", "imgurl":"images/visTemplate.png" , "url": "gallery/visPayback/index.html"},
+{"titulo":"Template", "imgurl":"images/visPayback.png" , "url": "gallery/visPayback/index.html"},
+{"titulo":"Template", "imgurl":"images/visPayback.png" , "url": "gallery/visPayback/index.html"},
+{"titulo":"Template", "imgurl":"images/visPayback.png" , "url": "gallery/visPayback/index.html"},
+{"titulo":"Template", "imgurl":"images/visPayback.png" , "url": "gallery/visPayback/index.html"}
 ]
