@@ -1,7 +1,8 @@
 [
-{"titulo":"Financiamiento", "imgurl":"images/Payback.png" , "url": "http://exploratorium.s3.amazonaws.com/galeria/visK12Financiamiento/index.html"},
-{"titulo":"Payback", "imgurl":"images/visPayback.png" , "url": "http://exploratorium.s3.amazonaws.com/galeria/visEdSup_Payback/index.html"},
-{"titulo":"Carreras", "imgurl":"images/visCarreras.png" , "url": "http://exploratorium.s3.amazonaws.com/galeria/visEdSupCarreras/index.html"},
-{"titulo":"Flujo", "imgurl":"images/visFlujo.png" , "url": "http://exploratorium.s3.amazonaws.com/galeria/visK12Traza/index.html"},
-{"titulo":"IEs", "imgurl":"images/visIEs.png" , "url": "http://exploratorium.s3.amazonaws.com/galeria/visEdSupIEs/index.html"}
+{"titulo":"Payback 0.2", "imgurl":"images/visPayback.png" , "url": "http://exploratorium.s3.amazonaws.com/visualizaciones/payback.html"},
+{"titulo":"Flujo 0.2", "imgurl":"images/visFlujo.png" , "url": "http://exploratorium.s3.amazonaws.com/visualizaciones/traza.html"},
+{"titulo":"Carreras 0.2", "imgurl":"images/visCarrerasTreemap.png" , "url": "http://exploratorium.s3.amazonaws.com/visualizaciones/treemapCarreras.html"},
+{"titulo":"Carreras 0.1", "imgurl":"images/visCarreras.png" , "url": "http://exploratorium.s3.amazonaws.com/visualizaciones/carreras.html"},
+{"titulo":"Financiamiento 0.1", "imgurl":"images/visFinanciamiento.png" , "url": "http://exploratorium.s3.amazonaws.com/visualizaciones/financiamiento.html"},
+{"titulo":"IEs 0.1", "imgurl":"images/visIEs.png" , "url": "http://exploratorium.s3.amazonaws.com/visualizaciones/ies.html"}
 ]
