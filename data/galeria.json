@@ -1,10 +1,16 @@
 [
+{	"titulo":"AccesoPSU 0.1", 
+	"imgurl":"images/visAccesoPSU.png" , 
+	"url": "http://exploratorium.s3.amazonaws.com/publico/visAccesoPSU/index.html"},
 {	"titulo":"AccesoEdSup 0.1", 
 	"imgurl":"images/visAccesoEdSup.png" , 
 	"url": "http://exploratorium.s3.amazonaws.com/publico/visAccesoEdSup/index.html"},
 {	"titulo":"Payback 0.2", 
 	"imgurl":"images/visPayback.png" , 	
 	"url": "http://exploratorium.s3.amazonaws.com/publico/visPayback/index.html"},
+{	"titulo":"MigraciónRegiones 0.1", 
+	"imgurl":"images/visMigracionRegiones.png" , 
+	"url": "http://exploratorium.s3.amazonaws.com/publico/visMigracionRegiones/index.html"},
 {	"titulo":"Flujo 0.2", 
 	"imgurl":"images/visFlujo.png" , 
 	"url": "http://exploratorium.s3.amazonaws.com/publico/visTraza/index.html"},
@@ -17,7 +23,7 @@
 {	"titulo":"Financiamiento 0.1", 
 	"imgurl":"images/visFinanciamiento.png" , 
 	"url": "http://exploratorium.s3.amazonaws.com/visualizaciones/financiamiento.html"},
-{	"titulo":"IEs 0.1", 
+{	"titulo":"IEs 0.2", 
 	"imgurl":"images/visIEs.png" , 
-	"url": "http://exploratorium.s3.amazonaws.com/publico/visIEs/index.html"}
+	"url": "http://exploratorium.s3.amazonaws.com/publico/visForcesCarreras/index.html"}
 ]
