@@ -66,7 +66,7 @@ var VistaPrincipal = Backbone.View.extend({
 				.append("div")
 					.attr("class", "span3")
 				.append("a")
-					.attr("href",function(d) {return d.url})				
+					.attr("href",function(d) {return "http://bl.ocks.org/"+d.gist_user+"/raw/"+d.gist_id+"/"})				
 
 		// Agrega título a cada celda
 		this.celdas
@@ -77,7 +77,7 @@ var VistaPrincipal = Backbone.View.extend({
 		this.celdas
 				.append("img")
 					.attr("class", "img-polaroid")
-					.attr("src",  function(d) {return d.imgurl})
+					.attr("src",  function(d) {return "http://bl.ocks.org/"+d.gist_user+"/raw/"+d.gist_id+"/thumbnail.png"})
 
 
 		$("body").append(this.tooltip.render().$el);
