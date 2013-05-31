@@ -14,6 +14,17 @@
 {	"titulo":"Flujo - Dependencia 0.2", 
 	"gist_user":"elaval",
 	"gist_id" : "b6dd2b74071b96550429"},
+
+
+{	"titulo":"Flujo - Notas I a IV Medio", 
+	"gist_user":"elaval",
+	"gist_id" : "5bd6e89de19583a38ce9"},
+
+{	"titulo":"Flujo - Notas I-III a IV Medio", 
+	"gist_user":"elaval",
+	"gist_id" : "c7ea72967c031b41445b"},
+
+	
 {	"titulo":"Carreras - Tremap 0.2", 
 	"gist_user":"elaval",
 	"gist_id" : "4f02a3af61e34b0bc119"},
@@ -34,7 +45,17 @@
 	"gist_id" : "1e34e48dc6b859fcf836"},
 {	"titulo":"Financiamiento 0.1", 
 	"gist_user":"elaval",
-	"gist_id" : "d46c4cb1896fe6a76810"}
+	"gist_id" : "d46c4cb1896fe6a76810"},
+
+{	"titulo":"Evolución Simce 4º Básico", 
+	"gist_user":"elaval",
+	"gist_id" : "69c67db7d7e6658c60b9"},	
+
+{	"titulo":"Tasa Estudiantes/Docentes", 
+	"gist_user":"elaval",
+	"gist_id" : "6477eb71a591fe0808ad"}
 	
+	
+
 	
 ]
